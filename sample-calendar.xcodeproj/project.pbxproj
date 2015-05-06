@@ -12,12 +12,12 @@
 		450E82A11AF9691900156010 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450E82A01AF9691900156010 /* Images.xcassets */; };
 		450E82A41AF9691900156010 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450E82A21AF9691900156010 /* LaunchScreen.xib */; };
 		450E82B01AF9691900156010 /* sample_calendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82AF1AF9691900156010 /* sample_calendarTests.m */; };
-		450E82BB1AF9699D00156010 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82BA1AF9699D00156010 /* CalendarViewController.m */; };
-		450E82BE1AF96A2D00156010 /* CalendarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82BD1AF96A2D00156010 /* CalendarViewLayout.m */; };
-		450E82C11AF96B8C00156010 /* HourReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82C01AF96B8C00156010 /* HourReusableView.m */; };
 		450E82C61AF9966B00156010 /* CalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82C51AF9966B00156010 /* CalendarController.m */; };
 		450E82C91AF996DD00156010 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82C81AF996DD00156010 /* Event.m */; };
-		450E82CC1AF9996C00156010 /* EventViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82CB1AF9996C00156010 /* EventViewCell.m */; };
+		450E82D51AF9AF0300156010 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82CE1AF9AF0300156010 /* CalendarViewController.m */; };
+		450E82D61AF9AF0300156010 /* CalendarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82D01AF9AF0300156010 /* CalendarViewLayout.m */; };
+		450E82D71AF9AF0300156010 /* EventViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82D21AF9AF0300156010 /* EventViewCell.m */; };
+		450E82D81AF9AF0300156010 /* HourReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E82D41AF9AF0300156010 /* HourReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +41,18 @@
 		450E82A91AF9691900156010 /* sample-calendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-calendarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450E82AE1AF9691900156010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450E82AF1AF9691900156010 /* sample_calendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sample_calendarTests.m; sourceTree = "<group>"; };
-		450E82B91AF9699D00156010 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ../CalendarViewController.h; sourceTree = "<group>"; };
-		450E82BA1AF9699D00156010 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ../CalendarViewController.m; sourceTree = "<group>"; };
-		450E82BC1AF96A2D00156010 /* CalendarViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewLayout.h; path = ../CalendarViewLayout.h; sourceTree = "<group>"; };
-		450E82BD1AF96A2D00156010 /* CalendarViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewLayout.m; path = ../CalendarViewLayout.m; sourceTree = "<group>"; };
-		450E82BF1AF96B8C00156010 /* HourReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourReusableView.h; path = ../HourReusableView.h; sourceTree = "<group>"; };
-		450E82C01AF96B8C00156010 /* HourReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourReusableView.m; path = ../HourReusableView.m; sourceTree = "<group>"; };
 		450E82C41AF9966B00156010 /* CalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarController.h; sourceTree = "<group>"; };
 		450E82C51AF9966B00156010 /* CalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarController.m; sourceTree = "<group>"; };
 		450E82C71AF996DD00156010 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		450E82C81AF996DD00156010 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		450E82CA1AF9996C00156010 /* EventViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewCell.h; sourceTree = "<group>"; };
-		450E82CB1AF9996C00156010 /* EventViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewCell.m; sourceTree = "<group>"; };
+		450E82CD1AF9AF0300156010 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		450E82CE1AF9AF0300156010 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		450E82CF1AF9AF0300156010 /* CalendarViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewLayout.h; sourceTree = "<group>"; };
+		450E82D01AF9AF0300156010 /* CalendarViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewLayout.m; sourceTree = "<group>"; };
+		450E82D11AF9AF0300156010 /* EventViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewCell.h; sourceTree = "<group>"; };
+		450E82D21AF9AF0300156010 /* EventViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewCell.m; sourceTree = "<group>"; };
+		450E82D31AF9AF0300156010 /* HourReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourReusableView.h; sourceTree = "<group>"; };
+		450E82D41AF9AF0300156010 /* HourReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,14 +134,14 @@
 		450E82C21AF977BB00156010 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				450E82B91AF9699D00156010 /* CalendarViewController.h */,
-				450E82BA1AF9699D00156010 /* CalendarViewController.m */,
-				450E82BC1AF96A2D00156010 /* CalendarViewLayout.h */,
-				450E82BD1AF96A2D00156010 /* CalendarViewLayout.m */,
-				450E82BF1AF96B8C00156010 /* HourReusableView.h */,
-				450E82C01AF96B8C00156010 /* HourReusableView.m */,
-				450E82CA1AF9996C00156010 /* EventViewCell.h */,
-				450E82CB1AF9996C00156010 /* EventViewCell.m */,
+				450E82CD1AF9AF0300156010 /* CalendarViewController.h */,
+				450E82CE1AF9AF0300156010 /* CalendarViewController.m */,
+				450E82CF1AF9AF0300156010 /* CalendarViewLayout.h */,
+				450E82D01AF9AF0300156010 /* CalendarViewLayout.m */,
+				450E82D11AF9AF0300156010 /* EventViewCell.h */,
+				450E82D21AF9AF0300156010 /* EventViewCell.m */,
+				450E82D31AF9AF0300156010 /* HourReusableView.h */,
+				450E82D41AF9AF0300156010 /* HourReusableView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -256,13 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450E82D61AF9AF0300156010 /* CalendarViewLayout.m in Sources */,
+				450E82D81AF9AF0300156010 /* HourReusableView.m in Sources */,
 				450E82991AF9691900156010 /* AppDelegate.m in Sources */,
-				450E82C11AF96B8C00156010 /* HourReusableView.m in Sources */,
-				450E82BB1AF9699D00156010 /* CalendarViewController.m in Sources */,
 				450E82C61AF9966B00156010 /* CalendarController.m in Sources */,
-				450E82BE1AF96A2D00156010 /* CalendarViewLayout.m in Sources */,
 				450E82961AF9691900156010 /* main.m in Sources */,
-				450E82CC1AF9996C00156010 /* EventViewCell.m in Sources */,
+				450E82D51AF9AF0300156010 /* CalendarViewController.m in Sources */,
+				450E82D71AF9AF0300156010 /* EventViewCell.m in Sources */,
 				450E82C91AF996DD00156010 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
