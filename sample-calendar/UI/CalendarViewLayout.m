@@ -31,7 +31,8 @@ static const CGFloat CalendarViewLayoutTimeLinePadding = 6.0f;
 
 - (CGSize)collectionViewContentSize
 {
-    return CGSizeMake(self.collectionView.bounds.size.width, CalendarViewLayoutHourViewHeight * 24);
+    // We need to add a padding since the last few pixels of every hour block are displayed in the next block (all but the last hour block, hence the padding)
+    return CGSizeMake(self.collectionView.bounds.size.width, CalendarViewLayoutHourViewHeight * 24 + CalendarViewLayoutTimeLinePadding);
 }
 
 - (void)prepareLayout
@@ -42,10 +43,12 @@ static const CGFloat CalendarViewLayoutTimeLinePadding = 6.0f;
     if ([self.collectionView.delegate conformsToProtocol:@protocol(CalendarViewLayoutDelegate)]) {
         id <CalendarViewLayoutDelegate> calendarViewLayoutDelegate = (id <CalendarViewLayoutDelegate>)self.collectionView.delegate;
         
+        // Compute every events layoutAttributes
         for (NSInteger i = 0; i < [self.collectionView numberOfSections]; i++) {
             for (NSInteger j = 0; j < [self.collectionView numberOfItemsInSection:i]; j++) {
                 NSIndexPath *cellIndexPath = [NSIndexPath indexPathForItem:j inSection:i];
                 NSRange timespan = [calendarViewLayoutDelegate calendarViewLayout:self timespanForCellAtIndexPath:cellIndexPath];
+                // Since the actual "line" in every hour block start a few pixels below the cell's top border,  give that same padding to every event time.
                 CGFloat posY = timespan.location / 60.0f + CalendarViewLayoutTimeLinePadding;
                 CGFloat height = timespan.length / 60.0f;
                 
@@ -59,12 +62,15 @@ static const CGFloat CalendarViewLayoutTimeLinePadding = 6.0f;
         }
     }
     
-    NSMutableArray *allAttributes = [NSMutableArray new];
-    
+    // Compute every 'hour block' layoutAttributes
     for (NSInteger i = 0; i < 24; i++) {
         UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:@"hour" withIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
         CGRect attributesFrame = CGRectZero;
         attributesFrame.size = CGSizeMake(self.collectionView.bounds.size.width, CalendarViewLayoutHourViewHeight);
+        if (i == 23) {
+            // Since it is the last hour block, we need to add the padding that was in every other block's beginning (before the line).
+            attributesFrame.size.height += CalendarViewLayoutTimeLinePadding;
+        }
         attributesFrame.origin = CGPointMake(0, i * CalendarViewLayoutHourViewHeight);
         attributes.frame = attributesFrame;
         [self.hourAttributes addObject:attributes];

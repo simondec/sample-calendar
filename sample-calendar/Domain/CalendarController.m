@@ -23,7 +23,7 @@
                         [Event eventWithTitle:@"Breakfast with Nancy" timespan:NSMakeRange(23400, 3600) color:[UIColor blueColor]],
                         [Event eventWithTitle:@"Shopping for a much needed new pair of shoes" timespan:NSMakeRange(32400, 10800) color:[UIColor redColor]],
                         [Event eventWithTitle:@"Meeting!" timespan:NSMakeRange(52200, 7200) color:[UIColor orangeColor]],
-                        [Event eventWithTitle:@"Beer with Matt" timespan:NSMakeRange(75600, 9000) color:[UIColor blueColor]]
+                        [Event eventWithTitle:@"Beer with Matt" timespan:NSMakeRange(75600, 10800) color:[UIColor blueColor]]
                         ];
         
     }
